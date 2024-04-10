@@ -1,0 +1,150 @@
+/* utility class */
+
+
+.effect8
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before, .effect8:after
+{
+  content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,1);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,1);
+    box-shadow:0 0 20px rgba(0,0,0,1);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect8:after
+{
+  right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+/* custom variable */
+
+@font-face {
+    font-family: pixel_sans;
+    src: url(fonts/Pixel_Sans/PixelifySans-Regular.ttf);
+}
+
+
+/* vanila css */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #31363F;
+    color: #EEEEEE;
+    font-family: pixel_sans;
+    padding: 3rem;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.nav{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+
+.profile{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.profile_icon{
+    width:3.5rem;
+}
+
+.sep{
+    width: 90vw;
+    background-color: #76ABAE;
+    padding: 0.6rem;
+    border-radius: 45px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    padding: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1em;
+}
+
+.label{
+    font-size: 1.5rem;
+    text-shadow: 3px 4px 7px #31363F;
+}
+
+.actions{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.readTg{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+
+.card,#add_card{
+    height: 15rem;
+    width:11rem;
+    background-color: #EEEEEE;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+#add_card{
+    justify-content: center;
+    align-items: center;
+    gap:1em;
+}
+
+.add_btn{
+    padding: 0.9rem;
+    border: 0px solid black;
+    background-color: #31363F;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.add_btn:hover{
+    font-size: 2rem;
+}
+
+.add_txt{
+    color:#31363F;
+}

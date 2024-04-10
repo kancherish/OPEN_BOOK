@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Book Library</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="brand">
+            <div class="logo">OPEN BOOK</div>
+            <div class="desc">A fantastic go-to solution for tracking of your books list</div>
+        </div>
+        <div class="profile">
+            <img src="svg/face-man-profile.svg" alt="" class="profile_icon">
+            <div class="username">@corner_guy</div>
+        </div>
+    </div>
+    <div class="sep">
+        <div class="label">
+            BOOK CATALOGUE
+        </div>
+        <div class="actions">
+            <div class="readTg">Read:<input type="checkbox"></div>
+            <div class="readTg">Not Read:<input type="checkbox"></div>
+            <div class="sort">Sort by: <select name="sorting_opt" id="sorting_opt">
+                <option value="modify">BY MODIFIED</option>
+                <option value="tile">BY TITLE</option>
+                <option value="auth">BY AUTH NAME</option>
+                <option value="pub_date">BY PUBLISH DATE</option>
+                </select>
+            </div>
+            <div class="arrange">Sort by: <select name="arrange_opt" id="arrange_opt">
+                <option value="ASC">ASC</option>
+                <option value="DSC">DSC</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="card effect8" id="add_card">
+            <button class="add_btn" onclick="console.log('clicked')">+</button>
+            <div class="add_txt">Add a Book</div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+<script src="script.js">
+</script>
+</html>
