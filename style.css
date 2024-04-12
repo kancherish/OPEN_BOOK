@@ -235,3 +235,13 @@ input{
         color: #76ABAE;
         cursor:pointer;
 }
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    right:40vw;
+}
+
+.footer a{
+    color:#EEEEEE
+}
