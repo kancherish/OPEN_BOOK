@@ -3,13 +3,16 @@ let Library_Books_lst=[];
 
 let no_of_books=0;
 
-function Book(name,author,pages,status,id){
-    this.name=name;
-    this.author=author;
-    this.pages=pages;
-    this.status=status;
-    this.id=id;
+class Book(name,author,pages,status,id){
+    constructor(){
+         this.name=name;
+         this.author=author;
+         this.pages=pages;
+         this.status=status;
+         this.id=id;
+    }
 }
+
 
 const book_lst=document.querySelector(".book_list");
 
