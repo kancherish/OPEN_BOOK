@@ -93,7 +93,7 @@ function createCard(name,auth,pages,status,id){
 }
 
 //function to handle click on card + icon
-function addBook(book){
+function addBook(){
     document.querySelector("dialog").showModal()
 }
 
